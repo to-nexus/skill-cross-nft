@@ -1,0 +1,17 @@
+{
+  "name": "cross-nft",
+  "description": "CROSS NFT marketplace driver — drives the same backends that power https://www.crossnft.io across CROSS Chain (612055). Read-path (collections, token, listing, offers, activities, stats) hits the api.crossnft.io GraphQL indexer; write-path (list, cancel-listing, buy, offer, cancel-offer, accept-offer) signs MarketplaceV1 calls via viem with auto setApprovalForAll / ERC-20 approve. Triggers on phrases like 'CROSS NFT 마켓', 'crossnft.io 구매', 'NFT 리스팅', 'make offer 0x... tokenId', 'list NFT for sale', 'buy listing'.",
+  "author": {
+    "name": "to-nexus"
+  },
+  "homepage": "https://github.com/to-nexus/skill-cross-nft",
+  "keywords": [
+    "nft",
+    "marketplace",
+    "crossnft",
+    "evm",
+    "cross-chain",
+    "graphql",
+    "viem"
+  ]
+}
