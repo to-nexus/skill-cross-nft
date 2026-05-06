@@ -16,6 +16,8 @@ A Claude Code skill that drives the **CROSS NFT marketplace** at `https://www.cr
 > - `list` / `accept-offer` — runs `setApprovalForAll(marketplace, true)` on the NFT contract if not already approved.
 > - `buy` / `offer` — for ERC-20 paymentToken, runs `approve(marketplace, total)` (exact amount, or unlimited with `--max-approve`); for native paymentToken (sentinel `0x0…0`), attaches `msg.value` instead.
 
+> 🔒 **Private repository.** Owner (`to-nexus`) installs via `gh auth login`. Others need collaborator access or `GITHUB_TOKEN`. See the umbrella [`cross-skills-suite` README](https://github.com/to-nexus/cross-skills-suite#authenticating-to-private-repos) for details.
+
 ---
 
 ## Install — Standalone
