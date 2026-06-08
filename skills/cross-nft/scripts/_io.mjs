@@ -43,7 +43,7 @@ export async function main(fn) {
     process.exit(out && out.ok === false ? (out.error === 'awaiting_confirm' ? 2 : 1) : 0);
   } catch (e) {
     emit({ ok: false, error: 'unhandled', detail: e?.message || String(e) });
-    if (process.env.DEBUG) process.stderr.write((e?.stack || '') + '\n');
+    if (process.env.DEBUG) process.stderr.write((e?.message || '') + '\n');
     process.exit(1);
   }
 }
